@@ -1,0 +1,109 @@
+/* 辅音视频 */
+.consonant_video_if,
+.consonant_video_if iframe {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    background-color: #fff;
+}
+
+.consonant_video_yb{
+    width: 550px;
+    /* background-color: #bfa; */
+    margin: 0 auto;
+}
+.consonant_video_yb td {
+    width: auto;
+    min-width: 30px;
+    height: 16px;
+    text-align: center;
+    border: 1px red solid;
+    font-size: 16px;
+    /* border-collapse: collapse; */
+}
+
+/* 设置表格的边框 */
+tr:not(:nth-child(1)) td:nth-child(2n+1):not(:nth-child(1)) {
+    border-left: none;
+}
+
+td:nth-child(2n):not(:nth-child(16)) {
+    border-right: none;
+}
+
+.consonant_video_yb a {
+    display: block;
+    line-height: 25px;
+    font-size: 16px;
+    /* background-color: #ff6700; */
+}
+
+.light_td:hover,
+.light_td li:hover{
+    background-color: #ff6700;
+}
+
+/* 使单词对应其音标定位 */
+.light_td {
+    position: relative;
+}
+/* ul垂直居中 */
+.light_td ul{
+    margin: 8px 0;
+} 
+.light_td li {
+    margin: 7px auto; 
+    width: 60px;
+    background-color: #fff;
+    border: solid 1px #ff6700;
+    box-shadow: 2px 2px 2px #ff6700;
+    border-radius: 10px;
+}
+/* 隐藏单词的公共样式 */
+.consonant_video_words1,
+.consonant_video_words2,
+.consonant_video_words3,
+.consonant_video_words4,
+.consonant_video_words5,
+.consonant_video_words6{
+    width: 80px;
+    height: 176px;
+    background-color: #333333; 
+    border-radius: 30px;
+    position: absolute;
+    left: 28px;
+    z-index: 999;
+    display: none;
+}
+/* 每行单词向上偏移量 */
+.consonant_video_words1{
+    top: -22px;
+}
+.consonant_video_words2{
+    top: -48px;
+} 
+.consonant_video_words3{
+    top: -74px;
+} 
+.consonant_video_words4{
+    top: -100px;
+}
+ /* h单词定位  */
+.words4_r{
+    left: 48px;
+}
+.consonant_video_words5{
+    top: -125px;
+}
+.consonant_video_words6{
+    top: -150px;
+}
+.light_td:hover .consonant_video_words1,
+.light_td:hover .consonant_video_words2,
+.light_td:hover .consonant_video_words3,
+.light_td:hover .consonant_video_words4,
+.light_td:hover .consonant_video_words5,
+.light_td:hover .consonant_video_words6{
+    display: block;
+}

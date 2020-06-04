@@ -1,0 +1,202 @@
+/* 网页公共框架 */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body { 
+    /* 设置背景图片 */
+    background-image: url("../images/bg.jpg");
+    /* 背景图片平铺 */
+    background-size: 100% 100%;
+    /* 背景图片不跟随元素移动 */
+    background-attachment:fixed;
+    /* 背景不重复 */
+    background-repeat: no-repeat;
+    color: #333;
+}
+body,button, input{
+    /* 设置网页字体样式 */
+    /* 字体来源淘宝 */
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+body a{
+    /* 去除超连接下划线 */
+    text-decoration: none;
+    color: #333;
+}
+body h1{
+    text-align: center;
+    font-size: 24px;
+}
+body p{
+    text-align: justify;
+    font-size: 18px;
+}
+/* 顶部容器 */
+.top_wapper{
+    width: 900px;
+    height: 110px;
+    border-bottom: 1px solid tomato;
+    margin: 0 auto;
+}
+/* 标题 */
+.top_title{
+    float: left;
+    width: 600px;
+    height: 100px;
+}
+.top_title p{
+    margin-left: 50px;
+    /* 中英标题间距 */
+    line-height: 1.18;
+    color: white;
+}
+.top_title .top_tit{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 360px;
+    height: 60px;
+    background-image: url("../images/tittle/t1.jpg");
+    /* background-image: url("../images/tittle/t2.jpg"); */
+    /* background-image: url("../images/tittle/t3.jpg"); */
+    /* background-image: url("../images/tittle/t4.jpg"); */
+    /* 背景图片平铺 */
+    background-size: 100% 100%;
+    /* 背景不重复 */
+    background-repeat: no-repeat;
+}
+/* 校徽 */
+.top_logo{
+    float: right;
+    width: 296px;
+    height: 100px;
+}
+.zzuli,
+.haut {
+    float: right;
+    width: 90px;
+    height: 90px;
+    /* 圆角 */
+    border-radius: 50%;
+    border: 1px white solid;
+    margin: 5px 5px;
+    background-size: 100% 100%;
+}
+/* 郑州轻工业大学图标 */
+.zzuli {
+    background-image: url("../images/zzuli_1.JPG");
+}
+/* 河南工业大学图标 */
+.haut {
+    margin-right: 25px;
+    background-image: url("../images/haut.JPG");
+}
+
+.main{
+    width: 900px;
+    height: 500px;
+    /* border-top: 1px solid white;
+    border-bottom: 1px solid white; */
+    margin: 10px auto;
+}
+.main_left{
+    float: left;
+    width: 200px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .1);
+    display: table;
+}
+/* 垂直居中 */
+.main_left ul{
+    display: table-cell;
+    vertical-align: middle;
+}
+.main_left li{
+    line-height: 35px;
+    position: relative;
+    margin: 5px 0;
+}
+
+.main_left a{
+    display: block;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.main_left i{
+    line-height: 35px;
+    font-size: 16px;
+    color: #3c5e6f;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.main_left li:hover{
+    background-color: #ff6700;
+}
+/* 下拉菜单 */
+.vowel_nav,
+.consonant_nav,
+.intonation_nav{
+    width: 150px;
+    background-color:#333;
+    box-shadow: 2px 2px 2px;
+    position: absolute;
+    left: 50px;
+    z-index: 999;
+    display: none;
+}
+.vowel_nav li,
+.consonant_nav li, 
+.intonation_nav li{ 
+    width: 150px;
+}
+.vowel_nav a,
+.consonant_nav a, 
+.intonation_nav a{ 
+    color: white;
+}
+.main_left li:hover .vowel_nav,
+.main_left li:hover .consonant_nav,
+.main_left li:hover .intonation_nav{
+    display: block;
+}
+.main_right{
+    float: right;
+    width: 700px;
+    height: 500px;
+}
+/* 当前位置 */
+.location {
+    line-height: 40px;
+    margin: 0 10px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0px 1px 1px;
+}
+.location h3 {
+    margin-left: 20px;
+}
+/* 内容区 */
+.content{
+    width: 680px;
+    min-height: 460px;
+    height: auto;
+    margin: 0 10px;
+    background-color:rgba(0, 0, 0, .1);
+}
+.content h1{
+    padding:10px 0;
+}
+.content p{
+    padding:0px 10px;
+    /* 首行空两格 */
+    text-indent: 2em;
+}

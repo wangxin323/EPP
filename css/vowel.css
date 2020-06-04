@@ -1,0 +1,87 @@
+.highlight {
+    background-color: #ff6700;
+}
+.content_if,
+.content_if iframe{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+}
+.vowel_wapper{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+}
+/* .vowel_yb ul{
+    border: 1px solid red;
+} */
+.vowel_title{
+    width: 60px;
+    float: left;
+    margin-top: 10px;
+    font-size: 16px;
+    /* background-color: #fff; */
+}
+.vowel_title li{
+    line-height: 40px;
+    margin-top: 12px;
+}
+.vowel_yb{
+    float: left;
+    width: 420px;
+    /* height: 200px;  */
+    margin: 10px auto;
+    /* background-color: #fff; */
+    position: relative;
+}
+.vowel_yb li{
+    float: left;
+    width: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #ff6700;
+    box-shadow: 2px 2px 2px #ff6700;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.vowel_yb a{
+    display: block;
+    font-size: 18px;
+}
+.vowel_yb a:hover{
+    color: white;
+}
+.vowel_yb li:hover{
+    background-color: #ff6700;
+    color: white;
+}
+/* 单词 */
+.vowel_words{
+    width: 409px;
+    height: 57px;
+    background-color: #333;
+    border-radius: 15px;
+    position: absolute;
+    /* top:52px; */
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.vowel_words ul {
+    /* ul宽度不固定，使li水平居中 */
+    display: table;
+    margin: 0 auto;
+}
+.vowel_words li {
+    margin: 6px;
+    min-width: 40px;
+    width: auto;
+}
+.vowel_yb li:hover .vowel_words{
+    display: block;
+}

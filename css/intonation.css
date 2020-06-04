@@ -1,0 +1,94 @@
+/* 语调样式表 */
+/* 设置中间样式 */
+.main_wapper{
+    width: 500px;
+    margin: 0px auto;
+}
+.main_iframe,
+.main_iframe iframe{
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+}
+.main_lj{
+    width: 600px;
+    margin: 0 auto;
+}
+.main_lj td{
+    width: 300px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: solid #80868b 1px;
+}
+.main_lj a{
+    display: block;
+}
+.main_lj a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* 录音样式 */
+.luyin_wapper{
+    width: 630px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* 开启定位 */
+    position: relative;
+}
+.luyin_wapper input{
+    height: 26px;
+}
+.luyin{
+    position: absolute;
+    left: 305px;
+    top: 10px;
+}
+/* audio大小 */
+.bofang audio{
+    margin-top: 5px;
+    width: 300px;
+}
+.bofang #bt{
+    position: absolute;
+    left: 440px;
+    top: 28px;
+}
+/* 对比图按钮 */
+.btn{
+    line-height: 18px;
+    border: none;
+    font-size: 16px;
+    background-color:#e9e9e9;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+}
+/* 音频相识度 */
+#diff-results{
+    background-color: #e9e9e9;
+    border: .2px solid #a5a5a5;
+    padding-left: 5px;
+    line-height: 26px;
+    position: absolute;
+    left: 507px;
+    top: 28px;
+}
+#diff-results:hover{
+    border: .2px solid #6e6e6e;
+}
+/* 隐藏显示，但是占据网页空间 */
+#waveform,#waveform2{   
+    height: 0px;
+    visibility: hidden; 
+}
+/* 对比图像 */
+.small-drop-zone img{
+    width: 600px;
+    height: 400px;
+    margin-top: 0;
+    margin-left:10px;
+}
